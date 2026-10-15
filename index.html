@@ -1,67 +1,1904 @@
-<!-- <!DOCTYPE html>
+
+<!DOCTYPE html>
+<!--
+==================================================
+              HTML COMPLETE GUIDE
+                 PART 1
+==================================================
+
+HTML stands for HyperText Markup Language.
+HTML defines the structure of web pages.
+-->
+
 <html lang="en">
+<!-- تگ ریشه سند HTML
+     ویژگی lang زبان محتوای صفحه را مشخص می‌کند -->
+
 <head>
+    <!-- بخش head شامل اطلاعات و تنظیمات صفحه است -->
+
     <meta charset="UTF-8">
-    <meta name="description" content="Discover amazing travel destinations and book your next adventure with our travel agency.">
-    <title>Travel Agency Page</title>
-</head>
-<body>
-    <h1>Explore Amazing Travel Destinations</h1>
-    <p>We offer unforgettable travel opportunities to the most beautiful destinations around the world. Whether you want to relax on a beach or climb a mountain, we have the perfect trip for you.</p>
+    <!-- تعیین کدگذاری کاراکترها برای پشتیبانی از زبان‌های مختلف -->
 
-    <h2>Packages</h2>
-    <p>Choose from our wide range of travel packages designed to suit every budget and preference. From group adventures to private tours, we've got you covered.</p>
-    <ul>
-        <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
-        <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
-    </ul>
-
-    <h2>Top Itineraries</h2>
-
-    <figure>
-        <a href="https://www.freecodecamp.org/learn" target="_blank">
-            <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="The Colosseum in Rome, Italy">
-        </a>
-        <figcaption>Visit the historic Colosseum in Rome</figcaption>
-    </figure>
-
-    <figure>
-        <a href="https://www.freecodecamp.org/learn" target="_blank">
-            <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="The snowy peaks of the Alps mountains">
-        </a>
-        <figcaption>Explore the breathtaking Alps mountains</figcaption>
-    </figure>
-
-    <figure>
-        <a href="https://www.freecodecamp.org/learn" target="_blank">
-            <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="A calm blue sea with clear water">
-        </a>
-        <figcaption>Relax by the crystal-clear sea</figcaption>
-    </figure>
-</body>
-</html> -->
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Player</title>
+    <!-- تنظیم مقیاس و عرض صفحه برای نمایش صحیح در دستگاه‌های مختلف -->
+
+    <meta name="description" content="A complete guide to HTML tags.">
+    <!-- تعیین توضیح مختصر صفحه برای موتورهای جست‌وجو -->
+
+    <meta name="author" content="HTML Learner">
+    <!-- مشخص کردن نویسنده صفحه -->
+
+    <title>HTML Complete Guide</title>
+    <!-- تعیین عنوانی که در تب مرورگر نمایش داده می‌شود -->
+
+    <link rel="icon" href="favicon.ico">
+    <!-- اتصال آیکون تب مرورگر -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- اتصال فایل CSS خارجی -->
+
+    <style>
+        /* نوشتن کدهای CSS داخل سند HTML */
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+    <!--
+    تگ script برای افزودن JavaScript استفاده می‌شود.
+
+    نمونه اتصال فایل خارجی:
+    <script src="app.js" defer></script>
+
+    ویژگی defer اجرای اسکریپت خارجی را تا پس از پردازش HTML
+    به تعویق می‌اندازد.
+    -->
 </head>
+
 <body>
-    <h1>My Media Player</h1>
+    <!-- تمام محتوای اصلی قابل مشاهده صفحه در body قرار می‌گیرد -->
 
-    <section>
-        <h2>Now Playing: What is the Map Method?</h2>
-        <video controls width="640">
-            <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" type="video/mp4">
-        </video>
+    <!-- =========================================
+                   1. HEADING TAGS
+    ========================================== -->
+
+    <h1>Main Heading</h1>
+    <!-- h1 عنوان اصلی و معمولاً مهم‌ترین عنوان صفحه است -->
+
+    <h2>Section Heading</h2>
+    <!-- h2 عنوان سطح دوم برای بخش‌های اصلی -->
+
+    <h3>Subsection Heading</h3>
+    <!-- h3 عنوان سطح سوم -->
+
+    <h4>Level Four Heading</h4>
+    <!-- h4 عنوان سطح چهارم -->
+
+    <h5>Level Five Heading</h5>
+    <!-- h5 عنوان سطح پنجم -->
+
+    <h6>Level Six Heading</h6>
+    <!-- h6 عنوان سطح ششم -->
+
+    <!-- =========================================
+                    2. PARAGRAPHS
+    ========================================== -->
+
+    <p>This is a paragraph.</p>
+    <!-- p برای ایجاد یک پاراگراف استفاده می‌شود -->
+
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <!-- هر تگ p یک پاراگراف مستقل ایجاد می‌کند -->
+
+    <br>
+    <!-- br یک خط جدید ایجاد می‌کند و تگ پایانی ندارد -->
+
+    <p>First line<br>Second line</p>
+    <!-- برای شکستن خط درون یک متن از br استفاده می‌شود -->
+
+    <hr>
+    <!-- hr یک جداکننده موضوعی ایجاد می‌کند -->
+
+    <!-- =========================================
+                    3. TEXT FORMATTING
+    ========================================== -->
+
+    <p><strong>Important information</strong></p>
+    <!-- strong نشان‌دهنده اهمیت معنایی متن است -->
+
+    <p><b>Bold text</b></p>
+    <!-- b توجه بصری را به متن جلب می‌کند، بدون اینکه لزوماً اهمیت معنایی داشته باشد -->
+
+    <p><em>Emphasized text</em></p>
+    <!-- em برای تأکید معنایی روی متن استفاده می‌شود -->
+
+    <p><i>Italic text</i></p>
+    <!-- i متن را با حالت یا لحن متفاوت نمایش می‌دهد -->
+
+    <p><u>Underlined text</u></p>
+    <!-- u برای نشانه‌گذاری متنی با زیرخط استفاده می‌شود -->
+
+    <p><s>Old information</s></p>
+    <!-- s نشان می‌دهد اطلاعات دیگر معتبر یا مرتبط نیستند -->
+
+    <p><del>Deleted text</del></p>
+    <!-- del متن حذف‌شده از سند را مشخص می‌کند -->
+
+    <p><ins>Inserted text</ins></p>
+    <!-- ins متن اضافه‌شده به سند را مشخص می‌کند -->
+
+    <p><mark>Highlighted text</mark></p>
+    <!-- mark بخشی از متن را برجسته می‌کند -->
+
+    <p>Water formula: H<sub>2</sub>O</p>
+    <!-- sub متن را به صورت زیرنویس نمایش می‌دهد -->
+
+    <p>Mathematics: x<sup>2</sup></p>
+    <!-- sup متن را به صورت بالانویس نمایش می‌دهد -->
+
+    <p><small>Small text</small></p>
+    <!-- small برای متن‌های جانبی یا با اهمیت کمتر استفاده می‌شود -->
+
+    <p><span>Inline text container</span></p>
+    <!-- span یک ظرف عمومی درون‌خطی است و به‌تنهایی ظاهر خاصی ندارد -->
+
+    <!-- =========================================
+                    4. QUOTATIONS
+    ========================================== -->
+
+    <p>He said, <q>Practice makes progress.</q></p>
+    <!-- q برای نقل‌قول کوتاه درون متن استفاده می‌شود -->
+
+    <blockquote>
+        Learning HTML is the first step toward building web pages.
+    </blockquote>
+    <!-- blockquote برای نقل‌قول مستقل استفاده می‌شود -->
+
+    <p><cite>Learning Web Development</cite></p>
+    <!-- cite برای مشخص کردن عنوان یک اثر مانند کتاب یا فیلم استفاده می‌شود -->
+
+    <!-- =========================================
+                    5. CODE TAGS
+    ========================================== -->
+
+    <p>Use <code>console.log()</code> to print a message.</p>
+    <!-- code برای نمایش قطعه کد استفاده می‌شود -->
+
+    <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save a file.</p>
+    <!-- kbd ورودی صفحه‌کلید را مشخص می‌کند -->
+
+    <p><samp>File saved successfully.</samp></p>
+    <!-- samp نمونه خروجی یک برنامه را نمایش می‌دهد -->
+
+    <p>Let <var>x</var> equal 10.</p>
+    <!-- var برای نمایش نام متغیر استفاده می‌شود -->
+
+    <pre>
+function greet() {
+    console.log("Hello World");
+}
+    </pre>
+    <!-- pre فاصله‌ها و شکست خط‌های نوشته‌شده را حفظ می‌کند -->
+
+    <!-- =========================================
+                    6. ABBREVIATIONS
+    ========================================== -->
+
+    <p>
+        <abbr title="HyperText Markup Language">HTML</abbr>
+        is used to structure web pages.
+    </p>
+    <!-- abbr برای مشخص کردن مخفف استفاده می‌شود
+         ویژگی title می‌تواند توضیح کامل مخفف را ارائه دهد -->
+
+    <p>
+        <dfn>Browser</dfn> is software used to access web pages.
+    </p>
+    <!-- dfn اصطلاحی را مشخص می‌کند که در متن تعریف می‌شود -->
+
+    <!-- =========================================
+                    7. OTHER TEXT TAGS
+    ========================================== -->
+
+    <p>
+        Published on
+        <time datetime="2026-10-15">October 15, 2026</time>.
+    </p>
+    <!-- time برای مشخص کردن تاریخ یا زمان قابل تشخیص برای ماشین -->
+
+    <p>
+        Product:
+        <data value="P100">Laptop</data>
+    </p>
+    <!-- data متن قابل مشاهده را به یک مقدار ماشینی متصل می‌کند -->
+
+    <p>
+        <bdi>user123</bdi>
+    </p>
+    <!-- bdi جهت متن را از متن اطراف جدا می‌کند -->
+
+    <p>
+        <bdo dir="rtl">This text is displayed right to left.</bdo>
+    </p>
+    <!-- bdo جهت نمایش متن را با ویژگی dir تغییر می‌دهد -->
+
+    <p>
+        A longword<wbr>example
+    </p>
+    <!-- wbr محل احتمالی شکستن خط را مشخص می‌کند -->
+
+    <p>
+        <ruby>
+            漢 <rt>kan</rt>
+        </ruby>
+    </p>
+    <!-- ruby برای افزودن راهنمای تلفظ به متن استفاده می‌شود -->
+
+    <p>
+        <ruby>
+            漢 <rp>(</rp><rt>kan</rt><rp>)</rp>
+        </ruby>
+    </p>
+    <!-- rp متن جایگزین برای مرورگرهایی است که ruby را پشتیبانی نمی‌کنند -->
+
+    <!-- =========================================
+                    8. COMMENTS
+    ========================================== -->
+
+    <!-- This is an HTML comment. -->
+    <!-- کامنت‌ها در صفحه نمایش داده نمی‌شوند، اما در سورس کد قابل مشاهده‌اند -->
+
+<!--
+==================================================
+                  PART 2
+          LINKS, IMAGES, LISTS, TABLES
+==================================================
+-->
+
+<!-- =========================================
+                 1. LINKS
+========================================== -->
+
+<a href="https://example.com">Visit Example</a>
+<!-- a برای ایجاد لینک استفاده می‌شود
+     href آدرس مقصد لینک را مشخص می‌کند -->
+
+<a href="about.html">About Us</a>
+<!-- لینک به یک فایل HTML دیگر در پروژه -->
+
+<a href="#contact">Go to Contact</a>
+<!-- لینک به عنصری با شناسه contact در همین صفحه -->
+
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">
+    Open in New Tab
+</a>
+<!-- target="_blank" لینک را در تب جدید باز می‌کند
+     rel="noopener noreferrer" ارتباط ناامن با صفحه مقصد را محدود می‌کند -->
+
+<a href="mailto:info@example.com">Send Email</a>
+<!-- mailto برای ایجاد لینک ارسال ایمیل -->
+
+<a href="tel:+123456789">Call Us</a>
+<!-- tel برای ایجاد لینک تماس تلفنی -->
+
+<a href="document.pdf" download>Download PDF</a>
+<!-- download درخواست دانلود فایل را مطرح می‌کند؛
+     رفتار نهایی به مرورگر و سرور هم بستگی دارد -->
+
+<a href="https://example.com">
+    <img src="logo.png" alt="Example Logo">
+</a>
+<!-- می‌توان تصویر را داخل لینک قرار داد تا تصویر قابل کلیک باشد -->
+
+
+<!-- =========================================
+                 2. IMAGES
+========================================== -->
+
+<img src="photo.jpg" alt="A beautiful landscape">
+<!-- img برای نمایش تصویر استفاده می‌شود
+     src مسیر تصویر و alt متن جایگزین آن است -->
+
+<img src="photo.jpg" alt="A landscape" width="400" height="250">
+<!-- width و height ابعاد تصویر را مشخص می‌کنند -->
+
+<img src="photo.jpg" alt="A landscape" loading="lazy">
+<!-- loading="lazy" بارگذاری تصویر را تا نزدیک شدن به محدوده نمایش
+     به تعویق می‌اندازد -->
+
+<img src="photo.jpg" alt="A landscape" title="Mountain View">
+<!-- title می‌تواند هنگام قرار گرفتن نشانگر، توضیحی نمایش دهد
+     اما جایگزین alt نیست -->
+
+<figure>
+    <!-- figure برای محتوای مستقلی مثل تصویر یا نمودار استفاده می‌شود -->
+
+    <img src="mountain.jpg" alt="Snowy mountains">
+
+    <figcaption>Snowy Mountain Landscape</figcaption>
+    <!-- figcaption عنوان یا توضیح محتوای figure را مشخص می‌کند -->
+</figure>
+
+<picture>
+    <!-- picture امکان انتخاب تصویر مناسب از چند منبع را فراهم می‌کند -->
+
+    <source srcset="landscape.webp" type="image/webp">
+    <!-- source یک منبع تصویری جایگزین معرفی می‌کند -->
+
+    <source srcset="landscape.png" type="image/png">
+
+    <img src="landscape.jpg" alt="A green landscape">
+    <!-- img منبع جایگزین برای مرورگر است -->
+</picture>
+
+<img
+    src="map.jpg"
+    alt="Clickable map"
+    usemap="#world-map"
+>
+<!-- usemap تصویر را به یک نقشه تصویری متصل می‌کند -->
+
+<map name="world-map">
+    <!-- map مجموعه‌ای از نواحی قابل کلیک روی تصویر را تعریف می‌کند -->
+
+    <area
+        shape="rect"
+        coords="0,0,150,100"
+        href="region.html"
+        alt="Northern Region"
+    >
+    <!-- area یک ناحیه قابل کلیک تعریف می‌کند
+         shape شکل ناحیه و coords مختصات آن را تعیین می‌کند -->
+</map>
+
+
+<!-- =========================================
+                 3. UNORDERED LIST
+========================================== -->
+
+<ul>
+    <!-- ul فهرست بدون ترتیب شماره‌ای ایجاد می‌کند -->
+
+    <li>HTML</li>
+    <!-- li یک آیتم از فهرست است -->
+
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+<ul>
+    <li>Frontend
+        <ul>
+            <!-- فهرست تو در تو برای نمایش ساختار سلسله‌مراتبی -->
+
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </li>
+
+    <li>Backend</li>
+</ul>
+
+
+<!-- =========================================
+                 4. ORDERED LIST
+========================================== -->
+
+<ol>
+    <!-- ol فهرست مرتب ایجاد می‌کند -->
+
+    <li>Install VS Code</li>
+    <li>Create an HTML file</li>
+    <li>Open the file in a browser</li>
+</ol>
+
+<ol type="A">
+    <!-- type نوع شماره‌گذاری را تعیین می‌کند -->
+
+    <li>First Item</li>
+    <li>Second Item</li>
+</ol>
+
+<ol type="I">
+    <li>First Item</li>
+    <li>Second Item</li>
+</ol>
+<!-- type="I" از اعداد رومی بزرگ استفاده می‌کند -->
+
+<ol start="5">
+    <!-- start شماره شروع فهرست را تعیین می‌کند -->
+
+    <li>Fifth Item</li>
+    <li>Sixth Item</li>
+</ol>
+
+<ol reversed>
+    <!-- reversed ترتیب شماره‌گذاری را معکوس می‌کند -->
+
+    <li>Third Item</li>
+    <li>Second Item</li>
+    <li>First Item</li>
+</ol>
+
+<ol>
+    <li>First Item</li>
+    <li value="10">Tenth Item</li>
+    <!-- value شماره یک آیتم را مشخص می‌کند -->
+
+    <li>Next Item</li>
+</ol>
+
+
+<!-- =========================================
+                 5. DESCRIPTION LIST
+========================================== -->
+
+<dl>
+    <!-- dl فهرست اصطلاحات و توضیحات را ایجاد می‌کند -->
+
+    <dt>HTML</dt>
+    <!-- dt اصطلاح یا عنوان را مشخص می‌کند -->
+
+    <dd>Defines the structure of web pages.</dd>
+    <!-- dd توضیح مربوط به اصطلاح را نمایش می‌دهد -->
+
+    <dt>CSS</dt>
+    <dd>Controls the appearance of web pages.</dd>
+
+    <dt>JavaScript</dt>
+    <dd>Adds behavior and interactivity to web pages.</dd>
+</dl>
+
+
+<!-- =========================================
+                 6. BASIC TABLE
+========================================== -->
+
+<table>
+    <!-- table برای ساخت جدول استفاده می‌شود -->
+
+    <tr>
+        <!-- tr یک ردیف جدول ایجاد می‌کند -->
+
+        <th>Name</th>
+        <!-- th سلول عنوان جدول است -->
+
+        <th>Age</th>
+        <th>Country</th>
+    </tr>
+
+    <tr>
+        <td>Alex</td>
+        <!-- td سلول معمولی داده است -->
+
+        <td>22</td>
+        <td>Canada</td>
+    </tr>
+
+    <tr>
+        <td>Emma</td>
+        <td>25</td>
+        <td>Australia</td>
+    </tr>
+</table>
+
+
+<!-- =========================================
+                 7. TABLE SECTIONS
+========================================== -->
+
+<table>
+    <!-- جدول را می‌توان به بخش‌های معنایی تقسیم کرد -->
+
+    <caption>Student Grades</caption>
+    <!-- caption عنوان جدول را مشخص می‌کند -->
+
+    <thead>
+        <!-- thead بخش سرستون‌های جدول است -->
+
+        <tr>
+            <th scope="col">Student</th>
+            <th scope="col">Math</th>
+            <th scope="col">Science</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- tbody شامل ردیف‌های اصلی داده است -->
+
+        <tr>
+            <th scope="row">Alex</th>
+            <!-- scope="row" مشخص می‌کند این عنوان مربوط به یک ردیف است -->
+
+            <td>18</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Emma</th>
+            <td>19</td>
+            <td>17</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <!-- tfoot برای اطلاعات پایانی یا جمع‌بندی جدول است -->
+
+        <tr>
+            <th scope="row">Average</th>
+            <td>18.5</td>
+            <td>18.5</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<!-- =========================================
+                 8. COLSPAN
+========================================== -->
+
+<table>
+    <tr>
+        <th colspan="2">Personal Information</th>
+        <!-- colspan یک سلول را در چند ستون گسترش می‌دهد -->
+    </tr>
+
+    <tr>
+        <td>Name</td>
+        <td>Alex</td>
+    </tr>
+</table>
+
+
+<!-- =========================================
+                 9. ROWSPAN
+========================================== -->
+
+<table>
+    <tr>
+        <th rowspan="2">Frontend</th>
+        <!-- rowspan یک سلول را در چند ردیف گسترش می‌دهد -->
+
+        <td>HTML</td>
+    </tr>
+
+    <tr>
+        <td>CSS</td>
+    </tr>
+</table>
+
+
+<!-- =========================================
+                 10. TABLE COLUMN GROUPS
+========================================== -->
+
+<table>
+    <!-- colgroup برای گروه‌بندی ستون‌های جدول است -->
+
+    <colgroup>
+        <col>
+        <!-- col یک یا چند ستون را برای تنظیمات مشترک مشخص می‌کند -->
+
+        <col span="2">
+        <!-- span تعداد ستون‌های تحت پوشش را تعیین می‌کند -->
+    </colgroup>
+
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Stock</th>
+    </tr>
+
+    <tr>
+        <td>Laptop</td>
+        <td>900</td>
+        <td>12</td>
+    </tr>
+</table>
+
+<!--
+==================================================
+                  PART 3
+             FORMS AND INPUTS
+==================================================
+-->
+
+<!-- =========================================
+                  1. FORM
+========================================== -->
+
+<form action="/register" method="post">
+    <!-- form برای ساخت فرم و دریافت اطلاعات کاربر است
+         action آدرس مقصد ارسال داده‌هاست
+         method روش ارسال داده‌ها را مشخص می‌کند -->
+
+    <label for="username">Username:</label>
+    <!-- label عنوان ورودی را مشخص می‌کند
+         ویژگی for باید با id ورودی برابر باشد -->
+
+    <input type="text" id="username" name="username">
+    <!-- input برای دریافت داده از کاربر است
+         type نوع ورودی را تعیین می‌کند
+         name نام فیلد هنگام ارسال اطلاعات است -->
+
+    <button type="submit">Register</button>
+    <!-- submit اطلاعات فرم را ارسال می‌کند -->
+</form>
+
+
+<!-- =========================================
+              2. TEXT INPUTS
+========================================== -->
+
+<form>
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" name="fullName">
+    <!-- text برای دریافت متن معمولی -->
+
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <!-- email برای دریافت آدرس ایمیل
+         مرورگر قالب اولیه ایمیل را بررسی می‌کند -->
+
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <!-- password کاراکترهای ورودی را معمولاً مخفی نمایش می‌دهد
+         این ویژگی به‌تنهایی داده را رمزنگاری نمی‌کند -->
+
+    <br>
+
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search">
+    <!-- search برای ورودی جست‌وجو -->
+
+    <br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
+    <!-- tel برای دریافت شماره تلفن
+         قالب شماره تلفن را به‌صورت خودکار اعتبارسنجی نمی‌کند -->
+
+    <br>
+
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website">
+    <!-- url برای دریافت آدرس اینترنتی -->
+
+    <br>
+
+    <label for="verification-code">Verification Code:</label>
+    <input
+        type="text"
+        id="verification-code"
+        name="verificationCode"
+        maxlength="6"
+    >
+    <!-- maxlength حداکثر تعداد کاراکترهای ورودی را مشخص می‌کند -->
+</form>
+
+
+<!-- =========================================
+                  3. NUMBER INPUT
+========================================== -->
+
+<form>
+    <label for="age">Age:</label>
+    <input
+        type="number"
+        id="age"
+        name="age"
+        min="1"
+        max="120"
+        step="1"
+    >
+    <!-- number برای دریافت مقدار عددی
+         min حداقل مقدار
+         max حداکثر مقدار
+         step فاصله مجاز بین مقادیر را مشخص می‌کند -->
+
+    <br>
+
+    <label for="price">Price:</label>
+    <input
+        type="number"
+        id="price"
+        name="price"
+        min="0"
+        step="0.01"
+    >
+    <!-- step="0.01" امکان مقدارهای اعشاری با گام یک‌صدم را فراهم می‌کند -->
+</form>
+
+
+<!-- =========================================
+                 4. DATE AND TIME
+========================================== -->
+
+<form>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+    <!-- date برای انتخاب تاریخ -->
+
+    <br>
+
+    <label for="meeting-time">Meeting Time:</label>
+    <input type="time" id="meeting-time" name="meetingTime">
+    <!-- time برای انتخاب ساعت -->
+
+    <br>
+
+    <label for="appointment">Appointment:</label>
+    <input
+        type="datetime-local"
+        id="appointment"
+        name="appointment"
+    >
+    <!-- datetime-local برای انتخاب تاریخ و ساعت محلی -->
+
+    <br>
+
+    <label for="birth-month">Birth Month:</label>
+    <input type="month" id="birth-month" name="birthMonth">
+    <!-- month برای انتخاب ماه و سال -->
+
+    <br>
+
+    <label for="calendar-week">Calendar Week:</label>
+    <input type="week" id="calendar-week" name="calendarWeek">
+    <!-- week برای انتخاب هفته از سال -->
+</form>
+
+
+<!-- =========================================
+                 5. CHOICE INPUTS
+========================================== -->
+
+<form>
+    <p>Select your skills:</p>
+
+    <label>
+        <input type="checkbox" name="skills" value="html">
+        HTML
+    </label>
+    <!-- checkbox برای انتخاب صفر یا چند گزینه -->
+
+    <label>
+        <input type="checkbox" name="skills" value="css">
+        CSS
+    </label>
+
+    <label>
+        <input type="checkbox" name="skills" value="javascript">
+        JavaScript
+    </label>
+
+    <p>Select your plan:</p>
+
+    <label>
+        <input type="radio" name="plan" value="basic">
+        Basic
+    </label>
+    <!-- radio برای انتخاب یک گزینه از یک گروه
+         گزینه‌های یک گروه باید name یکسان داشته باشند -->
+
+    <label>
+        <input type="radio" name="plan" value="premium">
+        Premium
+    </label>
+</form>
+
+
+<!-- =========================================
+                  6. FILE INPUT
+========================================== -->
+
+<form>
+    <label for="profile-picture">Profile Picture:</label>
+    <input
+        type="file"
+        id="profile-picture"
+        name="profilePicture"
+        accept="image/*"
+    >
+    <!-- file برای انتخاب فایل
+         accept نوع فایل‌های پیشنهادی را مشخص می‌کند -->
+
+    <br>
+
+    <label for="documents">Documents:</label>
+    <input
+        type="file"
+        id="documents"
+        name="documents"
+        accept=".pdf,.doc,.docx"
+        multiple
+    >
+    <!-- multiple اجازه انتخاب چند فایل را می‌دهد -->
+
+    <br>
+
+    <label for="resume">Resume:</label>
+    <input
+        type="file"
+        id="resume"
+        name="resume"
+        required
+    >
+    <!-- required اجباری بودن ورودی را مشخص می‌کند -->
+</form>
+
+
+<!-- =========================================
+                7. RANGE AND COLOR
+========================================== -->
+
+<form>
+    <label for="volume">Volume:</label>
+    <input
+        type="range"
+        id="volume"
+        name="volume"
+        min="0"
+        max="100"
+        value="50"
+    >
+    <!-- range برای انتخاب مقدار با لغزنده
+         value مقدار اولیه را تعیین می‌کند -->
+
+    <br>
+
+    <label for="favorite-color">Favorite Color:</label>
+    <input
+        type="color"
+        id="favorite-color"
+        name="favoriteColor"
+        value="#3366ff"
+    >
+    <!-- color برای انتخاب رنگ -->
+</form>
+
+
+<!-- =========================================
+                8. HIDDEN INPUT
+========================================== -->
+
+<form>
+    <input type="hidden" name="source" value="website">
+    <!-- hidden ورودی را در صفحه نمایش نمی‌دهد
+         داده مخفی قابل مشاهده و تغییر در درخواست است
+         بنابراین برای نگهداری رمز یا اطلاعات حساس مناسب نیست -->
+</form>
+
+
+<!-- =========================================
+                9. INPUT ATTRIBUTES
+========================================== -->
+
+<form>
+    <label for="required-name">Name:</label>
+    <input
+        type="text"
+        id="required-name"
+        name="name"
+        required
+    >
+    <!-- required وارد کردن مقدار را الزامی می‌کند -->
+
+    <br>
+
+    <label for="readonly-code">Account Code:</label>
+    <input
+        type="text"
+        id="readonly-code"
+        name="accountCode"
+        value="ACC-102"
+        readonly
+    >
+    <!-- readonly اجازه ویرایش مستقیم مقدار را نمی‌دهد
+         اما مقدار معمولاً همراه فرم ارسال می‌شود -->
+
+    <br>
+
+    <label for="disabled-field">Disabled Field:</label>
+    <input
+        type="text"
+        id="disabled-field"
+        value="Unavailable"
+        disabled
+    >
+    <!-- disabled ورودی را غیرفعال می‌کند
+         ورودی disabled معمولاً همراه فرم ارسال نمی‌شود -->
+
+    <br>
+
+    <label for="limited-name">Display Name:</label>
+    <input
+        type="text"
+        id="limited-name"
+        name="displayName"
+        minlength="3"
+        maxlength="20"
+    >
+    <!-- minlength حداقل طول
+         maxlength حداکثر طول متن را تعیین می‌کند -->
+
+    <br>
+
+    <label for="limited-email">Work Email:</label>
+    <input
+        type="email"
+        id="limited-email"
+        name="workEmail"
+        placeholder="name@example.com"
+        autocomplete="email"
+    >
+    <!-- placeholder متن راهنماست
+         autocomplete به مرورگر درباره نوع اطلاعات ورودی کمک می‌کند -->
+
+    <br>
+
+    <label for="pattern-code">Product Code:</label>
+    <input
+        type="text"
+        id="pattern-code"
+        name="productCode"
+        pattern="[A-Z]{3}[0-9]{3}"
+        title="Enter three uppercase letters followed by three digits."
+    >
+    <!-- pattern برای تعریف الگوی اعتبارسنجی با Regular Expression
+         title می‌تواند راهنمای خطای ورودی باشد -->
+
+    <br>
+
+    <label for="focus-name">Focus Example:</label>
+    <input
+        type="text"
+        id="focus-name"
+        name="focusName"
+        autofocus
+    >
+    <!-- autofocus درخواست می‌کند هنگام بارگذاری صفحه
+         این ورودی به‌صورت خودکار فوکوس بگیرد -->
+</form>
+
+
+<!-- =========================================
+               10. LABEL AND TEXTAREA
+========================================== -->
+
+<form>
+    <label for="message">Your Message:</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="40"
+        placeholder="Write your message here..."
+    ></textarea>
+    <!-- textarea برای دریافت متن چندخطی
+         rows تعداد تقریبی خطوط
+         cols عرض تقریبی متن را مشخص می‌کند -->
+</form>
+
+
+<!-- =========================================
+                 11. SELECT
+========================================== -->
+
+<form>
+    <label for="country">Country:</label>
+
+    <select id="country" name="country">
+        <!-- select یک فهرست انتخابی ایجاد می‌کند -->
+
+        <option value="">Choose a country</option>
+        <!-- option هر گزینه فهرست را تعریف می‌کند -->
+
+        <option value="ca">Canada</option>
+        <option value="au">Australia</option>
+        <option value="de">Germany</option>
+    </select>
+
+    <br>
+
+    <label for="framework">Framework:</label>
+
+    <select id="framework" name="framework">
+        <option value="react" selected>React</option>
+        <option value="vue">Vue</option>
+        <option value="angular">Angular</option>
+    </select>
+    <!-- selected گزینه اولیه انتخاب‌شده را مشخص می‌کند -->
+
+    <br>
+
+    <label for="technology">Technology:</label>
+
+    <select id="technology" name="technology">
+        <optgroup label="Frontend">
+            <!-- optgroup گزینه‌های مرتبط را گروه‌بندی می‌کند -->
+
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </optgroup>
+
+        <optgroup label="Backend">
+            <option value="node">Node.js</option>
+            <option value="python">Python</option>
+        </optgroup>
+    </select>
+</form>
+
+
+<!-- =========================================
+                 12. DATALIST
+========================================== -->
+
+<form>
+    <label for="browser">Choose a Browser:</label>
+
+    <input
+        list="browser-options"
+        id="browser"
+        name="browser"
+    >
+    <!-- ویژگی list ورودی را به datalist متصل می‌کند -->
+
+    <datalist id="browser-options">
+        <!-- datalist پیشنهادهایی برای ورودی فراهم می‌کند -->
+
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Edge">
+        <option value="Safari">
+    </datalist>
+</form>
+
+
+<!-- =========================================
+                 13. FIELDSET
+========================================== -->
+
+<form>
+    <fieldset>
+        <!-- fieldset ورودی‌های مرتبط را گروه‌بندی می‌کند -->
+
+        <legend>Personal Information</legend>
+        <!-- legend عنوان گروه را مشخص می‌کند -->
+
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="firstName">
+
+        <br>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="lastName">
+    </fieldset>
+</form>
+
+
+<!-- =========================================
+                 14. BUTTONS
+========================================== -->
+
+<form>
+    <button type="submit">Submit Form</button>
+    <!-- submit فرم را ارسال می‌کند -->
+
+    <button type="reset">Reset Form</button>
+    <!-- reset ورودی‌ها را به مقادیر اولیه بازمی‌گرداند -->
+
+    <button type="button">Click Me</button>
+    <!-- button به‌تنهایی فرم را ارسال نمی‌کند
+         می‌تواند با JavaScript رفتار مشخصی داشته باشد -->
+
+    <input type="submit" value="Send">
+    <!-- input با type submit دکمه ارسال ایجاد می‌کند -->
+
+    <input type="reset" value="Clear">
+    <!-- input با type reset دکمه بازنشانی ایجاد می‌کند -->
+
+    <input type="button" value="Action">
+    <!-- input با type button یک دکمه معمولی ایجاد می‌کند -->
+</form>
+
+
+<!-- =========================================
+               15. FORM VALIDATION
+========================================== -->
+
+<form action="/register" method="post">
+    <label for="register-email">Email:</label>
+
+    <input
+        type="email"
+        id="register-email"
+        name="email"
+        required
+    >
+    <!-- required اجباری بودن فیلد را تعیین می‌کند
+         type email بررسی اولیه قالب ایمیل را انجام می‌دهد -->
+
+    <br>
+
+    <label for="register-password">Password:</label>
+
+    <input
+        type="password"
+        id="register-password"
+        name="password"
+        minlength="8"
+        required
+    >
+    <!-- minlength حداقل طول مقدار را تعیین می‌کند
+         این محدودیت‌ها باید در بک‌اند نیز بررسی شوند -->
+
+    <br>
+
+    <button type="submit">Create Account</button>
+</form>
+
+
+<!-- =========================================
+                 16. OUTPUT
+========================================== -->
+
+<form oninput="result.value = Number(quantity.value) * Number(price.value)">
+    <!-- oninput با تغییر ورودی‌ها کد JavaScript را اجرا می‌کند
+         برای پروژه‌های بزرگ بهتر است رفتار را در فایل JavaScript بنویسی -->
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" value="1" min="0">
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" value="10" min="0">
+
+    <p>Total: <output name="result" for="quantity price">10</output></p>
+    <!-- output برای نمایش نتیجه محاسبه یا تعامل استفاده می‌شود -->
+</form>
+
+
+<!-- =========================================
+                 17. PROGRESS
+========================================== -->
+
+<label for="upload-progress">Upload Progress:</label>
+
+<progress id="upload-progress" value="70" max="100">70%</progress>
+<!-- progress میزان پیشرفت یک فرایند را نمایش می‌دهد
+     value مقدار فعلی و max مقدار نهایی است -->
+
+
+<!-- =========================================
+                   18. METER
+========================================== -->
+
+<label for="storage-level">Storage Usage:</label>
+
+<meter
+    id="storage-level"
+    min="0"
+    max="100"
+    low="30"
+    high="80"
+    optimum="20"
+    value="65"
+></meter>
+<!-- meter مقدار را در یک محدوده مشخص نشان می‌دهد
+     برای مثال میزان استفاده از فضای ذخیره‌سازی
+     meter با progress یکسان نیست -->
+
+<!--
+==================================================
+                  PART 4
+       SEMANTIC HTML, MEDIA AND INTERACTION
+==================================================
+-->
+
+<!-- =========================================
+              1. SEMANTIC STRUCTURE
+========================================== -->
+
+<header>
+    <!-- header برای سربرگ صفحه یا یک بخش استفاده می‌شود -->
+
+    <h1>My Website</h1>
+    <p>Welcome to my personal website.</p>
+</header>
+
+<nav>
+    <!-- nav بخش لینک‌های اصلی برای جابه‌جایی در سایت است -->
+
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <!-- main محتوای اصلی صفحه را مشخص می‌کند
+         معمولاً نباید چند main مستقل در یک صفحه داشته باشیم -->
+
+    <section id="home">
+        <!-- section محتوای مرتبط را در یک بخش گروه‌بندی می‌کند -->
+
+        <h2>Home</h2>
+        <p>Welcome to my website.</p>
     </section>
 
-    <section>
-        <h2>Now Playing: Sailing Away</h2>
-        <audio controls loop src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3">
-        </audio>
-    </section>
+    <article>
+        <!-- article برای محتوای مستقل مانند مقاله یا پست مناسب است -->
+
+        <h2>Learning HTML</h2>
+        <p>HTML is used to structure web pages.</p>
+
+        <footer>
+            <!-- footer اطلاعات پایانی این مقاله را مشخص می‌کند -->
+
+            <p>Written by Alex.</p>
+        </footer>
+    </article>
+
+    <aside>
+        <!-- aside برای محتوای جانبی و مرتبط استفاده می‌شود -->
+
+        <h2>Related Articles</h2>
+        <p>Explore more web development tutorials.</p>
+    </aside>
+</main>
+
+<footer>
+    <!-- footer بخش پایانی صفحه یا یک بخش را مشخص می‌کند -->
+
+    <p>Copyright 2026 My Website.</p>
+    <a href="#privacy">Privacy Policy</a>
+</footer>
+
+
+<!-- =========================================
+              2. DETAILS AND SUMMARY
+========================================== -->
+
+<details>
+    <!-- details یک بخش باز و بسته‌شونده ایجاد می‌کند -->
+
+    <summary>What is HTML?</summary>
+    <!-- summary عنوان قابل کلیک بخش details است -->
+
+    <p>HTML defines the structure of web pages.</p>
+</details>
+
+<details open>
+    <!-- ویژگی open باعث می‌شود بخش در ابتدا باز باشد -->
+
+    <summary>What is CSS?</summary>
+    <p>CSS controls the appearance of web pages.</p>
+</details>
+
+
+<!-- =========================================
+                  3. DIALOG
+========================================== -->
+
+<dialog open>
+    <!-- dialog برای نمایش یک پنجره محاوره‌ای استفاده می‌شود
+         ویژگی open پنجره را در ابتدا قابل مشاهده می‌کند -->
+
+    <h2>Welcome</h2>
+    <p>This is a dialog window.</p>
+
+    <form method="dialog">
+        <!-- method="dialog" با ارسال فرم، dialog را می‌بندد -->
+
+        <button type="submit">Close</button>
+    </form>
+</dialog>
+
+<!--
+برای باز کردن یک dialog به‌صورت modal معمولاً از JavaScript استفاده می‌شود:
+
+const dialog = document.querySelector("dialog");
+dialog.showModal();
+
+برای بستن آن:
+dialog.close();
+-->
+
+
+<!-- =========================================
+                  4. ADDRESS
+========================================== -->
+
+<address>
+    <!-- address اطلاعات تماس نویسنده یا مالک صفحه یا مقاله را مشخص می‌کند -->
+
+    Contact: <a href="mailto:hello@example.com">hello@example.com</a>
+</address>
+
+
+<!-- =========================================
+                  5. AUDIO
+========================================== -->
+
+<audio controls>
+    <!-- audio برای پخش فایل صوتی استفاده می‌شود
+         controls کنترل‌های پخش را نمایش می‌دهد -->
+
+    <source src="audio.mp3" type="audio/mpeg">
+    <!-- source منبع فایل صوتی را مشخص می‌کند -->
+
+    <source src="audio.ogg" type="audio/ogg">
+
+    Your browser does not support audio playback.
+</audio>
+
+<audio controls autoplay muted loop>
+    <source src="background.mp3" type="audio/mpeg">
+</audio>
+<!-- autoplay درخواست پخش خودکار می‌دهد
+     muted صدا را بی‌صدا می‌کند
+     loop پخش را تکرار می‌کند
+     مرورگر ممکن است پخش خودکار را محدود کند -->
+
+
+<!-- =========================================
+                  6. VIDEO
+========================================== -->
+
+<video controls width="640" height="360" poster="thumbnail.jpg">
+    <!-- video برای نمایش ویدئو استفاده می‌شود
+         poster تصویر پیش‌نمایش ویدئو را مشخص می‌کند -->
+
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+
+    Your browser does not support video playback.
+</video>
+
+<video controls width="640" muted loop>
+    <source src="preview.mp4" type="video/mp4">
+</video>
+<!-- muted صدا را قطع می‌کند
+     loop ویدئو را تکرار می‌کند -->
+
+<!--
+ویژگی‌های مهم audio و video:
+
+controls: نمایش کنترل‌های پخش
+autoplay: درخواست پخش خودکار
+muted: بی‌صدا کردن
+loop: تکرار پخش
+preload: راهنمایی به مرورگر برای بارگذاری اولیه
+poster: تصویر پیش‌نمایش video
+-->
+
+
+<!-- =========================================
+                  7. TRACK
+========================================== -->
+
+<video controls width="640">
+    <source src="movie.mp4" type="video/mp4">
+
+    <track
+        src="captions-en.vtt"
+        kind="captions"
+        srclang="en"
+        label="English"
+        default
+    >
+    <!-- track برای افزودن زیرنویس یا اطلاعات متنی رسانه است
+         kind نوع داده را مشخص می‌کند
+         srclang زبان فایل را تعیین می‌کند
+         label نام قابل نمایش مسیر زیرنویس است
+         default مسیر پیش‌فرض را مشخص می‌کند -->
+</video>
+
+
+<!-- =========================================
+                  8. IFRAME
+========================================== -->
+
+<iframe
+    src="https://example.com"
+    title="Example Website"
+    width="600"
+    height="400"
+    loading="lazy"
+></iframe>
+<!-- iframe یک صفحه یا محتوای خارجی را داخل صفحه فعلی نمایش می‌دهد
+     title توضیح قابل دسترس برای iframe
+     loading="lazy" بارگذاری را تا نزدیک شدن به محدوده نمایش به تعویق می‌اندازد -->
+
+<!--
+ویژگی‌های sandbox و allow می‌توانند محدودیت‌ها و مجوزهای iframe را کنترل کنند.
+برای محتوای خارجی ناشناس، تنظیم امنیتی مناسب اهمیت دارد.
+-->
+
+
+<!-- =========================================
+                  9. EMBED
+========================================== -->
+
+<embed
+    src="document.pdf"
+    type="application/pdf"
+    width="600"
+    height="400"
+>
+<!-- embed برای جاسازی یک منبع خارجی استفاده می‌شود
+     پشتیبانی از نوع فایل به مرورگر و افزونه‌های آن وابسته است -->
+
+
+<!-- =========================================
+                  10. OBJECT
+========================================== -->
+
+<object
+    data="document.pdf"
+    type="application/pdf"
+    width="600"
+    height="400"
+>
+    <p>Unable to display the PDF.</p>
+</object>
+<!-- object برای جاسازی یک منبع خارجی استفاده می‌شود
+     محتوای داخل آن می‌تواند جایگزین نمایش داده شود -->
+
+
+<!-- =========================================
+                  11. CANVAS
+========================================== -->
+
+<canvas id="drawing-canvas" width="400" height="200">
+    Your browser does not support canvas.
+</canvas>
+<!-- canvas سطحی برای رسم گرافیک با JavaScript فراهم می‌کند
+     خود canvas به‌تنهایی شکل رسم نمی‌کند -->
+
+<script>
+    // دریافت عنصر canvas از صفحه
+
+    const canvas = document.getElementById("drawing-canvas");
+
+    // دریافت محیط دوبعدی برای رسم
+
+    const context = canvas.getContext("2d");
+
+    // رسم یک مستطیل
+
+    context.fillStyle = "blue";
+    context.fillRect(20, 20, 150, 80);
+
+    // رسم متن
+
+    context.fillStyle = "black";
+    context.font = "20px Arial";
+    context.fillText("Hello Canvas", 20, 140);
+</script>
+<!-- برای رسم روی canvas از API جاوااسکریپت استفاده می‌شود -->
+
+
+<!-- =========================================
+                    12. SVG
+========================================== -->
+
+<svg width="300" height="180" viewBox="0 0 300 180">
+    <!-- svg برای ایجاد گرافیک برداری استفاده می‌شود
+         viewBox محدوده مختصات گرافیک را مشخص می‌کند -->
+
+    <rect
+        x="20"
+        y="20"
+        width="100"
+        height="60"
+        fill="blue"
+    />
+    <!-- rect برای رسم مستطیل -->
+
+    <circle
+        cx="190"
+        cy="50"
+        r="30"
+        fill="orange"
+    />
+    <!-- circle برای رسم دایره -->
+
+    <line
+        x1="20"
+        y1="120"
+        x2="270"
+        y2="120"
+        stroke="black"
+        stroke-width="3"
+    />
+    <!-- line برای رسم خط -->
+
+    <ellipse
+        cx="150"
+        cy="155"
+        rx="50"
+        ry="15"
+        fill="green"
+    />
+    <!-- ellipse برای رسم بیضی -->
+
+    <text
+        x="150"
+        y="100"
+        font-size="16"
+        text-anchor="middle"
+    >SVG Graphics</text>
+    <!-- text برای نوشتن متن داخل SVG -->
+</svg>
+
+
+<!-- =========================================
+                  13. TEMPLATE
+========================================== -->
+
+<template id="product-template">
+    <!-- template محتوایی را نگه می‌دارد که هنگام بارگذاری
+         به‌صورت عادی نمایش داده نمی‌شود و می‌تواند با JavaScript تکثیر شود -->
+
+    <article class="product">
+        <h2>Product Name</h2>
+        <p>Product Description</p>
+    </article>
+</template>
+
+<script>
+    // دریافت الگوی محصول
+
+    const template = document.getElementById("product-template");
+
+    // ساخت یک نسخه از محتوای الگو
+
+    const product = template.content.cloneNode(true);
+
+    // افزودن نسخه ساخته‌شده به صفحه
+
+    document.body.appendChild(product);
+</script>
+
+
+<!-- =========================================
+                   14. SLOT
+========================================== -->
+
+<!--
+slot برای قرار دادن محتوای قابل جایگزینی در Web Components استفاده می‌شود.
+معمولاً درون یک Shadow DOM قرار می‌گیرد و در HTML معمولی
+به‌تنهایی رفتار ویژه‌ای ندارد.
+
+نمونه:
+
+<my-card>
+    <span slot="title">Product Name</span>
+</my-card>
+
+در تعریف Web Component:
+<slot name="title"></slot>
+-->
+
+
+<!-- =========================================
+                15. POPover
+========================================== -->
+
+<button type="button" popovertarget="help-popover">
+    Show Help
+</button>
+<!-- popovertarget دکمه را به عنصر popover متصل می‌کند -->
+
+<div id="help-popover" popover>
+    <p>This is additional information.</p>
+</div>
+<!-- popover محتوایی را تعریف می‌کند که می‌تواند به شکل پاپ‌آپ نمایش داده شود -->
+
+<button type="button" popovertarget="help-popover" popovertargetaction="hide">
+    Hide Help
+</button>
+<!-- popovertargetaction="hide" برای بستن popover متصل‌شده استفاده می‌شود -->
+
+
+<!-- =========================================
+                 16. OUTPUT
+========================================== -->
+
+<form oninput="total.value = Number(quantity.value) * Number(price.value)">
+    <!-- oninput هنگام تغییر ورودی‌ها اجرا می‌شود
+         در پروژه‌های واقعی می‌توان رفتار را در فایل JavaScript نوشت -->
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" value="1" min="0">
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" value="10" min="0">
+
+    <p>Total: <output name="total" for="quantity price">10</output></p>
+</form>
+<!-- output برای نمایش نتیجه محاسبه یا تعامل استفاده می‌شود -->
+
+
+<!-- =========================================
+                17. PROGRESS
+========================================== -->
+
+<label for="download-progress">Download Progress:</label>
+<progress id="download-progress" value="65" max="100">65%</progress>
+<!-- progress میزان پیشرفت یک فرایند را نشان می‌دهد -->
+
+
+<!-- =========================================
+                  18. METER
+========================================== -->
+
+<label for="battery-level">Battery Level:</label>
+<meter
+    id="battery-level"
+    min="0"
+    max="100"
+    low="20"
+    high="80"
+    optimum="100"
+    value="75"
+></meter>
+<!-- meter مقدار اندازه‌گیری‌شده را در یک محدوده نشان می‌دهد
+     مانند سطح باتری یا میزان استفاده از فضای ذخیره‌سازی -->
+
+
+<!-- =========================================
+                  19. NOSCRIPT
+========================================== -->
+
+<noscript>
+    <!-- noscript محتوای جایگزین را زمانی نمایش می‌دهد که
+         JavaScript در مرورگر غیرفعال باشد یا اجرا نشود -->
+
+    <p>Please enable JavaScript to use all features.</p>
+</noscript>
+<body>
+
+    <!-- id: شناسه یکتا برای یک عنصر؛ نباید در صفحه تکراری باشد -->
+    <h1 id="main-title">Welcome</h1>
+
+    <!-- class: برای گروه‌بندی عناصر و استایل‌دهی با CSS -->
+    <p class="description">This is a description.</p>
+    <p class="description">This is another description.</p>
+
+    <!-- style: نوشتن CSS مستقیم داخل عنصر؛ برای پروژه‌های بزرگ بهتر است CSS جدا باشد -->
+    <p style="color: blue;">Blue Text</p>
+
+    <!-- title: نمایش اطلاعات تکمیلی هنگام قرار گرفتن نشانگر روی عنصر -->
+    <button title="Save your changes">Save</button>
+
+    <!-- hidden: مخفی کردن عنصر از نمایش صفحه -->
+    <p hidden>This content is hidden.</p>
+
+    <!-- lang: تعیین زبان محتوای یک عنصر -->
+    <p lang="fa" dir="rtl">سلام دنیا</p>
+
+    <!-- dir: تعیین جهت متن؛ مقادیر رایج ltr، rtl و auto هستند -->
+    <p dir="rtl">This text uses right-to-left direction.</p>
+
+    <!-- contenteditable: امکان ویرایش مستقیم محتوای عنصر در مرورگر -->
+    <p contenteditable="true">You can edit this text.</p>
+
+    <!-- spellcheck: فعال یا غیرفعال کردن بررسی املایی مرورگر -->
+    <textarea spellcheck="true">Check spelling here.</textarea>
+
+    <!-- draggable: مشخص می‌کند عنصر قابلیت کشیدن با ماوس را داشته باشد یا نه -->
+    <p draggable="true">Drag this text.</p>
+
+    <!-- tabindex: تعیین ترتیب دریافت فوکوس با کلید Tab -->
+    <button tabindex="0">Focusable Button</button>
+
+    <!-- translate: مشخص کردن امکان ترجمه محتوای عنصر توسط ابزارهای ترجمه -->
+    <p translate="no">OpenAI</p>
+
+    <!-- data-*: ذخیره اطلاعات سفارشی روی عناصر برای استفاده در JavaScript -->
+    <button data-product-id="101">View Product</button>
+
+    <!--
+        نکته:
+        ویژگی‌های عمومی روی همه عناصر به یک شکل کاربرد ندارند.
+        از tabindex برای ساخت ترتیب فوکوس منطقی استفاده کنید.
+    -->
+
+
+    <!--
+        ========================================
+        2. EVENT ATTRIBUTES
+        ویژگی‌های مربوط به رویدادها
+        این موارد تگ نیستند؛ ویژگی HTML هستند.
+        ========================================
+    -->
+
+    <!-- onclick: اجرا هنگام کلیک؛ برای پروژه‌ها روش JavaScript جداگانه ترجیح دارد -->
+    <button onclick="alert('Hello!')">Click Me</button>
+
+    <!-- oninput: اجرا هنگام تغییر مقدار ورودی -->
+    <input type="text" oninput="console.log(this.value)" placeholder="Type something">
+
+    <!-- onchange: اجرا هنگام تغییر مقدار و ثبت تغییر طبق رفتار همان عنصر -->
+    <select onchange="console.log(this.value)">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+    </select>
+
+    <!-- onsubmit: رویداد ارسال فرم؛ در پروژه واقعی اعتبارسنجی را هم در نظر بگیرید -->
+    <form onsubmit="return confirm('Submit this form?')">
+        <input type="text" name="username" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!--
+        رویدادهای پرکاربرد دیگر:
+        onfocus   : دریافت فوکوس
+        onblur    : از دست دادن فوکوس
+        onkeydown : فشرده شدن کلید
+        onkeyup   : رها شدن کلید
+        onmouseover : ورود نشانگر ماوس
+        onload    : بارگذاری عنصر یا صفحه، بسته به محل استفاده
+        onsubmit  : ارسال فرم
+
+        نکته:
+        در پروژه‌های واقعی بهتر است از addEventListener در JavaScript
+        استفاده کنید و از قراردادن کد JavaScript داخل HTML پرهیز کنید.
+    -->
+
+
+    <!--
+        ========================================
+        3. CUSTOM DATA ATTRIBUTES
+        ویژگی‌های سفارشی data-*
+        ========================================
+    -->
+
+    <div id="product" data-name="Laptop" data-price="1200">
+        Laptop Product
+    </div>
+
+    <!-- <script>
+        // خواندن ویژگی‌های data-* از طریق dataset
+        const product = document.querySelector("#product");
+
+        console.log(product.dataset.name);
+        console.log(product.dataset.price);
+    </script> -->
+
+
+    <!--
+        ========================================
+        4. SPECIAL CHARACTERS / HTML ENTITIES
+        نمایش کاراکترهایی که در HTML معنی ویژه دارند
+        ========================================
+    -->
+
+    <!-- نمایش علامت کوچک‌تر -->
+    <p>&lt;</p>
+
+    <!-- نمایش علامت بزرگ‌تر -->
+    <p>&gt;</p>
+
+    <!-- نمایش علامت & -->
+    <p>&amp;</p>
+
+    <!-- نمایش علامت نقل‌قول دوتایی -->
+    <p>&quot;</p>
+
+    <!-- نمایش علامت نقل‌قول تکی -->
+    <p>&apos;</p>
+
+    <!-- ایجاد فاصله نشکن؛ برای فاصله‌گذاری معمول از CSS استفاده کنید -->
+    <p>New&nbsp;York</p>
+
+    <!-- علامت کپی‌رایت -->
+    <p>&copy; 2026 Example Company</p>
+
+    <!-- علامت ثبت‌شده -->
+    <p>&reg; Example</p>
+
+    <!-- علامت تجاری -->
+    <p>&trade; Example</p>
+
+    <!-- نماد یورو -->
+    <p>&euro; 100</p>
+
+    <!-- خط تیره بلند -->
+    <p>HTML &mdash; HyperText Markup Language</p>
+
+
+    <!--
+        ========================================
+        5. BASE TAG
+        تعیین آدرس پایه برای لینک‌های نسبی
+        ========================================
+    -->
+
+    <!--
+        تگ base معمولاً در head قرار می‌گیرد.
+        فقط یک عنصر base در سند مجاز است.
+        آدرس پایه می‌تواند رفتار لینک‌ها و مسیر منابع نسبی را تغییر دهد.
+    -->
+
+    <!--
+    <head>
+        <base href="https://example.com/" target="_blank">
+    </head>
+    -->
+
+    <!--
+        مثال: با آدرس پایه بالا، href="about" به مسیر نسبی
+        نسبت به https://example.com/ اشاره می‌کند.
+        استفاده از base در پروژه‌ها باید با دقت انجام شود.
+    -->
+
+
+    <!--
+        ========================================
+        6. OBSOLETE ELEMENTS
+        عناصر منسوخ یا غیرمنطبق با HTML مدرن
+        ========================================
+    -->
+
+    <!--
+        از تگ‌های زیر در پروژه‌های جدید استفاده نکنید:
+
+        <font>       : تعیین فونت و رنگ با HTML قدیمی؛ به‌جای آن CSS
+        <center>     : وسط‌چین کردن؛ به‌جای آن CSS
+        <marquee>    : حرکت دادن متن؛ تگ منسوخ
+        <big>        : بزرگ کردن متن؛ به‌جای آن CSS
+        <tt>         : نمایش متن با ظاهر ماشین‌تحریر؛ به‌جای آن CSS
+        <strike>     : خط زدن متن؛ از del یا s در کاربرد مناسب استفاده کنید
+        <frame>      : فریم‌های قدیمی
+        <frameset>   : ساختار فریم‌های قدیمی
+        <noframes>   : محتوای جایگزین برای فریم‌های قدیمی
+        <applet>     : اجرای اپلت‌های Java قدیمی
+        <acronym>    : نمایش سرواژه؛ در صورت نیاز از abbr استفاده کنید
+        <basefont>   : تعیین فونت پایه قدیمی؛ به‌جای آن CSS
+        <isindex>    : ورودی جست‌وجوی قدیمی
+        <dir>        : فهرست قدیمی؛ از ul استفاده کنید
+
+        نکته:
+        برای رنگ، اندازه، فاصله، چینش و فونت از CSS استفاده کنید.
+    -->
+
+
+    <!--
+        ========================================
+        7. ACCESSIBILITY AND QUALITY CHECKLIST
+        چک‌لیست کیفیت صفحه HTML
+        ========================================
+    -->
+
+    <!--
+        [ ] از <!DOCTYPE html> استفاده شده است.
+        [ ] ویژگی lang روی html تنظیم شده است.
+        [ ] charset روی UTF-8 تنظیم شده است.
+        [ ] viewport برای نمایش مناسب روی موبایل وجود دارد.
+        [ ] عنوان مناسب داخل title قرار گرفته است.
+        [ ] تصاویر دارای alt مناسب هستند.
+        [ ] ورودی‌های فرم دارای label هستند.
+        [ ] مقدار id در صفحه تکراری نیست.
+        [ ] تگ‌ها به‌درستی باز و بسته شده‌اند.
+        [ ] از عناصر معنایی مانند header، main و footer استفاده شده است.
+        [ ] ترتیب headingها منطقی است.
+        [ ] لینک‌ها متن قابل‌فهم دارند.
+        [ ] برای استایل‌دهی از CSS استفاده شده است.
+        [ ] برای رفتارهای تعاملی از JavaScript استفاده شده است.
+        [ ] فرم‌ها در سمت سرور نیز اعتبارسنجی می‌شوند.
+        [ ] HTML در یک اعتبارسنج معتبر بررسی شده است.
+    -->
+
 </body>
-</html> -->
+</body>
+</html>
